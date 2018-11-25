@@ -5,7 +5,7 @@ STRATIFYD-CHALLENGE
 <b>Energy Savings</b>
 <b>HTML, CSS, Bootstrap and jQuery.</b>
 
-This web widget provides a visualization of the impact of energy savings of the users.                                                     The users who saved enegry last month can see an illustration of the number of cars they took off the road, the numer of trees they saved from being cut down and the amount (in tonnes) of co2 that was saved from releasing into the air.
+This web widget provides a visualization of the impact of energy savings of the users.                                                     The users who saved energy last month can see an illustration of the number of cars they took off the road, the numer of trees they saved from being cut down and the amount (in tonnes) of Co2 that was saved from releasing into the air.
 
 <b>Perfecting Responsive Layout</b><br/>
 Use the Media Query to adjust the certain size of the layout. Resize the screen and check all the section to find out the one need to be resize.
