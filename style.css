@@ -1,0 +1,122 @@
+body,html{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+#car-info,
+#tree-info,
+#carbon-info{
+    display: none;
+}
+.chart{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+/*--------------------------------------------*/
+/*Imagess*/
+/*------------------------------------------*/
+
+
+.image2{
+    margin-bottom: 40px;
+}
+
+/*--------------------------------------------*/
+/*Buttons*/
+/*------------------------------------------*/
+.btn{
+  border: 1px solid grey;
+  width: 7%;
+  height: 50px;
+  text-align: center;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #007bff;
+}
+
+.buttons{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+/*--------------------------------------------*/
+/*Reusable*/
+/*------------------------------------------*/
+
+.row{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.box{
+    padding: 2%;
+}
+
+/*--------------------------------------------*/
+/*Header*/
+/*------------------------------------------*/
+
+.middle{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url(images/herojpg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/herojpg.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/*--------------------------------------------*/
+/*Headings*/
+/*------------------------------------------*/
+
+h1,h2{
+    text-align: center;
+}
+
+h1{
+    padding-top: 90px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+h2{
+    margin-top: 40px;
+}
+
+h4{ 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+/*--------------------------------------------*/
+/* Footer */
+/*--------------------------------------------*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:dimgray;
+    color: white;
+    text-align:center;
+    font-size: 18px;
+}
+
+
+
+
+
+
