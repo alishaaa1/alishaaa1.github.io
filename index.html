@@ -4,9 +4,11 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="Vendors/css/Grid.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="Vendors/css/animations.css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="Vendors/js/jquery-3.3.1.js"></script>
@@ -28,12 +30,12 @@
             <div id="car-info">
                 <div class="col span-1-of-2 box flow text-center">
                     <h4>You saved 218 kWH last month which is equivalent to taking <strong>SIX cars</strong> off the road.</h4>
-                        <img class="image1" src="images/car1.jpg">
-                        <img class="image1" src="images/car1.jpg"><br/>
-                        <img class="image1" src="images/car1.jpg">
-                        <img class="image1" src="images/car1.jpg"><br/>
-                        <img class="image1" src="images/car1.jpg">
-                        <img class="image1" src="images/car1.jpg"><br/>
+                        <img class="Right image1" src="images/car1.jpg">
+                        <img class="Left image1" src="images/car1.jpg"><br/>
+                        <img class="Right image1" src="images/car1.jpg">
+                        <img class="Left image1" src="images/car1.jpg"><br/>
+                        <img class="Right image1" src="images/car1.jpg">
+                        <img class="Left image1" src="images/car1.jpg"><br/>
                 </div>
                     <div class="col span-1-of-2 box flow  text-center">
                         <h4>Great job! You used 573 kWH last month, compared to 791 kWh in the same month last year. The resulting savings is enough to offset the energy consumption of six cars for a month.</h4>
@@ -83,5 +85,53 @@
             <p>Copyrights &copy; 2018 All Rights Reserved by alisha.</p>
             </div>
         </footer>
-	</body>
+        
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+        $("#cars").on("click", function(){
+            $("#car-info").show();
+        });$("#trees, #carbon").on("click",function(){
+          $("#car-info").hide();
+        });
+
+        $("#trees").on("click", function(){ 
+            $("#tree-info").show(); 
+        });$("#cars, #carbon").on("click",function(){ 
+            $("#tree-info").hide();
+        });
+
+        $("#carbon").on("click", function(){ 
+            $("#carbon-info").show(); 
+        });$("#trees, #cars").on("click",function(){ 
+            $("#carbon-info").hide();
+        });
+
+        });
+    </script>
+   
+    <script>
+	$(window).scroll(function() {
+		$('.Right').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideRight");
+			}
+		});
+        
+        $('.Left').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+    
+       
+    </body>
 </html>

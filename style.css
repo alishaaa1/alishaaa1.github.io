@@ -19,10 +19,17 @@ body,html{
 /*Imagess*/
 /*------------------------------------------*/
 
-
+.image{
+    -webkit-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
 .image2{
     margin-bottom: 40px;
 }
+
+
 
 /*--------------------------------------------*/
 /*Buttons*/
@@ -115,8 +122,40 @@ footer {
     font-size: 18px;
 }
 
+/*--------------------------------------------*/
+/* Animations */
+/*--------------------------------------------*/
 
+@-webkit-keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+@-webkit-keyframes spin { 
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg); 
+    } 
+}
 
+@keyframes spin { 
+    100% {
+    
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg); 
+    } 
+}
 
 
